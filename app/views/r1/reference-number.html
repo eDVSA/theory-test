@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Enter your booking reference number</h1>
+      <p>The booking reference number was sent to the email address used to book the theory test or support request.</p>
+      <p>If you do not have a booking reference <a href="">contact DVSA</a>.</p>
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Enter your booking reference
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+
+      <a href="licence-number" class="govuk-button govuk-!-margin-right-2">Continue</a>
+
+
+    </div>
+</div>
+
+{% endblock %}

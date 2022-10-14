@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Enter your driving licence number</h1>
+
+          <p>Enter the 16-digit driving licence number of the person taking the test.</p>
+          <span class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Error message text
+          </span>
+          <p class="govuk-hint">See section 5 of the driving licence</p>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+<br><br>
+          <p class="govuk-body"><strong>Example</strong></p>
+          <img class="dl-exmaple" src="/public/images/item3.png" />
+
+<br><br><br><br>
+<a href="booking-status" class="govuk-button govuk-!-margin-right-2">Continue</a>
+
+
+    </div>
+
+</div>
+{% endblock %}
