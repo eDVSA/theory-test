@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Enter your driving licence number</h1>
+
+          <p>Enter the 16-digit driving licence number of the person taking the test.</p>
+          <ol class="hmrc-timeline">
+            <li class="hmrc-timeline__event">
+              <h2 class="hmrc-timeline__event-title">Repayment complete</h2>
+              <time class="hmrc-timeline__event-meta" datetime="2020-07-15">15 July 2020</time>
+              <div class="hmrc-timeline__event-content">
+                <p class="govuk-body">We repaid you £50. It will take 3 days for the money to reach your account.</p>
+              </div>
+            </li>
+            <li class="hmrc-timeline__event">
+              <h2 class="hmrc-timeline__event-title">Checking your claim</h2>
+              <time class="hmrc-timeline__event-meta" datetime="2020-07-14">14 July 2020</time>
+              <div class="hmrc-timeline__event-content">
+                <p class="govuk-body">We received your return. You claimed you were due a repayment of £50. We are checking your claim.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      You have 7 days left to send your application.
+      <a class="govuk-notification-banner__link" href="#">View application</a>.
+    </p>
+  </div>
+</div>
+        </div>
+</div>
+{% endblock %}
