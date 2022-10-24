@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Enter your booking details</h1>
+      <h3 class="govuk-heading-m">Booking reference</h3>
+
+      <p>We sent a booking reference to your email address.</p>
+      <div id="account-number-hint" class="govuk-hint">
+        For example, B-000-000-000​
+        </div>
+
+      <div class="govuk-form-group">
+        <!-- <label class="govuk-label" for="event-name">
+          Enter your booking reference
+        </label> -->
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <p>If you do not have a booking reference <a href="">contact DVSA</a>.</p>
+<br><br>
+      <h3 class="govuk-heading-m">Driving licence number​</h3>
+
+      <p>Your driving licence number is 16 numbers and letters long. ​
+It must be exactly the same as on the driving licence.​</p>
+      <div id="account-number-hint" class="govuk-hint">
+        See section 5 of your driving licence​
+        </div>
+
+      <div class="govuk-form-group">
+        <!-- <label class="govuk-label" for="event-name">
+          Enter your booking reference
+        </label> -->
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <p class="govuk-body"><strong>Example</strong></p>
+      <img class="dl-exmaple" src="/public/images/item3.png" />
+
+</div></div><br><br>
+      <a href="booking-status" class="govuk-button govuk-!-margin-right-2">Continue</a>
+
+
+
+
+{% endblock %}

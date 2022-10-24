@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+      <h1 class="govuk-heading-xl">Get a theory test time slot</h1>
+
+        <p>We sent you time slots for your theory test.​</p>
+​
+<p>The time slots are no longer reserved for you. This is because you did not book one in time.​</p>
+​
+<p>You can ask for more test slots to choose from or cancel your theory test.​</p>
+
+
+
+
+        <br>
+        <h2 class="govuk-heading-m"if-you-change-your-test-at-short-notice">If you cannot make these time slots</h2>
+        <p>If you cannot make these time slots, you can ask for 3 more.</p>
+
+
+        <div class="govuk-button-group">
+          <a href="theory-options" button class="govuk-button govuk-button--primary" data-module="govuk-button">
+            Get theory test time slot​
+          </a>
+
+          <a href="theory-options2" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Cancel theory test support​
+          </a>
+        </div>
+
+
+
+</div>
+
+{% endblock %}
