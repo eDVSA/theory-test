@@ -10,7 +10,7 @@
 
 {% block content %}
 <div class="govuk-grid-row">
-      <h1 class="govuk-heading-xl">Manage your theory test bookings</h1>
+      <h1 class="govuk-heading-xl">Manage your theory test bookings and support requests</h1>
 
         <!-- <p>
 
@@ -21,6 +21,7 @@ Select a booking reference to view, manage or cancel your theory test support.
         <br>
 
         <table class="govuk-table">
+          <h3 class="govuk-heading-m">Your support requests</h3>
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header app-custom-class">Test type</th>
@@ -33,13 +34,13 @@ Select a booking reference to view, manage or cancel your theory test support.
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Car</th>
               <td class="govuk-table__cell">B-000-261-433</td>
-              <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td>
+              <td class="govuk-table__cell"><strong class="govuk-tag">Test slots offered</strong></td>
               <td class="govuk-table__cell"><a href="book-slot">Book slot</a></td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Motorcycle</th>
               <td class="govuk-table__cell">B-000-261-432</td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Done</strong></td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Booked</strong></td>
               <td class="govuk-table__cell"><a href="check-details2">View</a></td>
             </tr><tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Motorcycle</th>
@@ -47,6 +48,30 @@ Select a booking reference to view, manage or cancel your theory test support.
               <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Expired</strong></td>
               <td class="govuk-table__cell"><a href="slot-expired">Get new slot</a></td>
             </tr>
+
+          </tbody>
+        </table>
+<br><br>
+        <table class="govuk-table">
+          <h3 class="govuk-heading-m">Your booked theory tests</h3>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Test type</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Date of test</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Booking reference</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Status</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Car</th>
+              <td class="govuk-table__cell">9:00am, Monday 12 November 2022</td>
+              <td class="govuk-table__cell">B-000-261-433</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Booked</strong></td>
+              <td class="govuk-table__cell"><a href="#">View</a></td>
+            </tr>
+
 
           </tbody>
         </table>
