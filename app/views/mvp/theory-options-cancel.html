@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <span class="govuk-caption-xl">Booking reference: B-000-261-431</span>
+
+      <h1 class="govuk-heading-xl">Cancel your theory test</h1>
+
+        <p>If you cancel your theory test, you'll have to start again to book and pay.</p>​
+<p>You must give at least 3 full working days' notice to cancel your test. If you do not, we'll not give you a refund.</p>
+<p>Monday to Saturday count as working days but Sundays and public bank holidays do not.​</p>
+
+
+
+
+        <br>
+
+
+        <div class="govuk-button-group">
+          <a href="cancel-reason" button class="govuk-button govuk-button--warning" data-module="govuk-button">
+            ​Cancel theory test
+          </a>
+          <a href="booking-status" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+
+          Manage theory test bookings</a>
+
+        </div>
+
+
+
+</div>
+
+{% endblock %}
