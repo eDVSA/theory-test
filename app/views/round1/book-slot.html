@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <span class="govuk-caption-xl">Booking reference: B-000-261-433</span>
+
+      <h1 class="govuk-heading-xl">Choose a theory test slot</h1>
+
+        <p>These are the time slots we have available that match your support needs.</p>
+
+        <br>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Time</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Swansea</th>
+              <td class="govuk-table__cell">12 November 2022</td>
+              <td class="govuk-table__cell">9:00am</td>
+              <td class="govuk-table__cell"><a href="check-details">Book slot</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Cardiff</th>
+              <td class="govuk-table__cell">12 November 2022</td>
+              <td class="govuk-table__cell">13:00pm</td>
+              <td class="govuk-table__cell"><a href="check-details">Book slot</a></td>
+            </tr><tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Bristol</th>
+              <td class="govuk-table__cell">14 November 2022</td>
+              <td class="govuk-table__cell">11:00am</td>
+              <td class="govuk-table__cell"><a href="check-details">Book slot</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+        <br><br>
+        <h2 class="govuk-heading-m"if-you-change-your-test-at-short-notice">If you cannot make one of these time slots</h2>
+        <p class="govuk-body">if you cannot make one of these time slots, you can:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a class="govuk-link" href="theory-options-ask">ask us for 3 more to choose from</a></li>
+          <li><a class="govuk-link" href="theory-options-cancel">cancel the support you asked for </a></li>
+        </ul>
+
+
+        <!-- <p>If you cannot make one of these time slots, you can <a class="govuk-link" href="theory-options">ask us for 3 more to choose from</a>.</p>
+
+        <p><a class="govuk-link" href="theory-options2">Cancel theory test support</a></p> -->
+
+        <!-- <div class="govuk-button-group">
+          <a href="theory-options" button class="govuk-button govuk-button" data-module="govuk-button">
+            Get a different time slot
+          </a>
+
+          <a href="theory-options" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Cancel theory test support
+          </a>
+        </div> -->
+
+
+
+</div>
+
+{% endblock %}

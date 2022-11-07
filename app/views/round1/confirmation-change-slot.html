@@ -1,0 +1,164 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-7">
+
+    <div class="govuk-grid-column-full">
+      <p class="govuk-body"><a href="#">Print this page</a></p>
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          You've asked us for different time slots
+        </h1>
+        <span style="font-size: 28px; font-weight: 700;"></span>
+        <div class="govuk-panel__body">
+          Your booking reference<br><strong>B-000-261-431</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-row" id="confirmation-page">
+
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">We’ve sent you a confirmation email with more information about your test. If you have not received the email within the next 10 minutes, check your junk or spam folders.</p>
+<br>
+      <!-- <p class="govuk-body"><strong>Keep your booking reference safe</strong>. <br>You'll need it to check, cancel or change this test.</p>
+      <p>Find out how to <a href="https://invis.io/9612ZRJRVNER">change or cancel your test</a> </p> -->
+
+
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Test type
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Motorcycle
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+            <!-- <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Cost
+              </dt>
+              <dd class="govuk-summary-list__value">
+                £23.00
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div> -->
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Test time and date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                 Weekdays, morning test slots
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Test location
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <span class="govuk-!-font-weight-bold">Swansea
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+
+
+            <div class="govuk-summary-list__row" style="display: none;">
+              <dt class="govuk-summary-list__key">
+                Test centre
+              </dt>
+              <dd class="govuk-summary-list__value">
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Additional support during the test
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Reader/recorder
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                On-screen Langauage
+              </dt>
+              <dd class="govuk-summary-list__value">
+
+                English
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                On-screen Bristish Sign Langauage (BSL)
+              </dt>
+              <dd class="govuk-summary-list__value">
+
+                Not requested
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Voiceover with headphones
+              </dt>
+              <dd class="govuk-summary-list__value">
+
+                Not requested
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+
+          </dl>
+          <!-- <p class="govuk-body"><strong>Keep your booking reference safe</strong>. <br>You’ll need it to check, change or cancel this test</p>
+
+          <div class="govuk-inset-text">
+        <p>  If you change or cancel your test, you must call us on xxx xxx xxx  </p>
+        <p>If you change or cancel your test after 10 November 2022, you’ll have to pay again.     </p>
+        </div> -->
+        <h2 class="govuk-heading-m">What happens next?</h2>
+<p>
+  We'll email you 3 theory test slots to choose from.
+  </p>
+
+    </div>
+
+
+</div>
+<a href="booking-status" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+
+Back to bookings</a>
+
+{% endblock %}

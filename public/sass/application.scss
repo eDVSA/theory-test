@@ -13,6 +13,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/step-by-step-related";
 @import "patterns/task-list";
 @import "patterns/related-items";
+@import "patterns/responsive-table";
 
 .two-thirds {
   width: 66%;
@@ -124,7 +125,7 @@ $govuk-assets-path: '/govuk/assets/';
   padding-left: 8px;
   text-align: center;
   margin-bottom: 10px;
-  
+
 
 }
 

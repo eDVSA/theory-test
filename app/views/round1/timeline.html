@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your support requests</h1>
+
+          <p>Booking reference B-000-261-433</p>
+          <br>
+          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Test slots offered
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      You have been offered 3 test slots. You have 7 days left to accept a test slot.
+      <a class="govuk-notification-banner__link" href="choose-slot">Choose a test slot</a>.
+    </p>
+  </div>
+</div>
+
+          <ol class="hmrc-timeline">
+            <li class="hmrc-timeline__event">
+              <h2 class="hmrc-timeline__event-title">Documents reviewed</h2>
+              <time class="hmrc-timeline__event-meta" datetime="2020-07-15">9 October 2022 at 10:45am</time>
+              <div class="hmrc-timeline__event-content">
+                <p class="govuk-body">All evidence submitted has been approved. </p>
+              </div>
+            </li>
+            <li class="hmrc-timeline__event">
+              <h2 class="hmrc-timeline__event-title">Documents uploaded</h2>
+              <time class="hmrc-timeline__event-meta" datetime="2020-07-14">8 October 2022 at 10:45am </time>
+
+
+              <div class="hmrc-timeline__event-content">
+              <p>  <a class="govuk-link" href="#">
+                            <svg class="moj-timeline__document-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" width="20" height="16">
+                              <path d="M9 7V1.5L14.5 7H9zM2 0C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6l-6-6H2z" />
+                            </svg>
+                            Document 1
+                          </a><span><br>
+                          <a class="govuk-link" href="#">
+                                      <svg class="moj-timeline__document-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" width="20" height="16">
+                                        <path d="M9 7V1.5L14.5 7H9zM2 0C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6l-6-6H2z" />
+                                      </svg>
+                                      Document 1
+                                    </a></p>
+                                      </div>
+            </li>
+
+            <li class="hmrc-timeline__event">
+              <h2 class="hmrc-timeline__event-title">Support request submitted</h2>
+              <time class="hmrc-timeline__event-meta" datetime="2020-07-15">7 October 2022 at 10:45am</time>
+              <div class="hmrc-timeline__event-content">
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>Reader/recorder</li>
+                  <li>Preffered location; Swansea</li>
+                  <li>Preffered date and time; 12 November, Mornings</li>
+                </ul>              </div>
+            </li>
+          </ol>
+
+
+        </div>
+</div>
+{% endblock %}
