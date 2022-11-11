@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">Booking reference: B-000-261-433</span>
+
+      <h1 class="govuk-heading-xl">Upload and send evidence</h1>
+      <p>Make sure your evidence:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          is a letter, email, diagnostic assessment or report</li>
+          <li>
+     is from an educational or medical professional</li>
+     <li>
+     confirms your condition, your first and last name</li>
+     <li>
+     is signed and on headed paper if it is a letter or report </li>
+        </ul>
+
+        <h3 class="govuk-heading-m">Upload the evidence document</h3>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1">
+            Upload a file
+          </label>
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+        </div>
+
+</div></div>
+      <a href="booking-status3" class="govuk-button govuk-!-margin-right-2">Continue</a>
+
+
+
+
+{% endblock %}
