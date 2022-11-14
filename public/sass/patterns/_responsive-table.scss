@@ -43,6 +43,7 @@
       white-space: normal;
       @include govuk-media-query($from: desktop) {
         display: table-cell;
+        vertical-align: middle;
         &:last-child {
           margin-left: govuk-spacing(9);
           div {
