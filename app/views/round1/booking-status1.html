@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl">Your theory test bookings</h1>
+
+        <!-- <p>
+
+Select a booking reference to view, manage or cancel your theory test support.
+
+</p> -->
+
+        <br>
+
+        <table class="govuk-table responsive-table">
+          <!-- <h3 class="govuk-heading-m">Support requests</h3> -->
+          <thead>
+            <tr role="row">
+              <th scope="col" >Test type</th>
+              <th scope="col" >Test slot</th>
+              <th scope="col" >Booking reference</th>
+              <th scope="col" >Status</th>
+              <th scope="col" >Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Test Type:</span>
+                <div>Car</div>
+              </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Test slot:</span>
+              </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Reference number:</span>
+                <div>B-000-261-433</div>
+                </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Status:</span>
+                <div><strong class="govuk-tag">Test slots offered</strong></div>
+              </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Actions:</span>
+                <div><a href="book-slot">View slots</a><br>        <a href="theory-options-cancel">Cancel</a></div>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Test Type:</span>
+                <div>Motorcycle</div>
+              </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Test slot:</span>
+              </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Reference number:</span>
+              <div>  B-000-261-431</div>
+                </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Status:</span>
+                <div><strong class="govuk-tag govuk-tag--red">Cancelled</strong></div>
+              </td>
+              <td role="gridcell">
+                <span class="table-heading" aria-hidden="true">Actions:</span>
+              <!-- <div>  <a href="theory-options-ask">Get new slots</a><br>        <a href="theory-options-cancel">Cancel</a></div> -->
+              </td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+
+<br><br>
+
+
+</div>
+
+{% endblock %}
